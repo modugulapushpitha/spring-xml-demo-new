@@ -9,6 +9,6 @@
         <property name="gender" value="male"></property>
     </bean>
     <bean id="mobj1" class="com.stackroute.domain.Movie" autowire="byName">
-        <property name="mname" value="KGF"/>
+        <property name="mname" value="KGF"></property>
     </bean>
 </beans>
