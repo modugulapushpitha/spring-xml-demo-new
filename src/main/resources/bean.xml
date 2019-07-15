@@ -3,15 +3,12 @@
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans
         http://www.springframework.org/schema/beans/spring-beans.xsd">
-    <bean id="aobj" class="com.stackroute.spring.domain.Actor">
-    <constructor-arg name="name" value="Yash"></constructor-arg>
-        <constructor-arg name="age" value="40"></constructor-arg>
-        <constructor-arg name="gender" value="male"></constructor-arg>
+    <bean id="aobj" class="com.stackroute.domain.Actor">
+        <property name="name" value="yash"></property>
+        <property name="age" value="40"></property>
+        <property name="gender" value="male"></property>
     </bean>
-   <bean id="mobj1" class="com.stackroute.spring.domain.Movie" autowire="byName">
-       <property name="mname" value="KGF"></property>
-    </bean>
-    <bean id="mobj2" class="com.stackroute.spring.domain.Movie" autowire="byType">
-        <property name="mname" value="KGF"></property>
+    <bean id="mobj1" class="com.stackroute.domain.Movie" autowire="byName">
+        <property name="mname" value="KGF"/>
     </bean>
 </beans>
