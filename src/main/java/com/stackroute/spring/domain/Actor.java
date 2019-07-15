@@ -33,6 +33,13 @@ public class Actor {
        this.age=age;
        this.gender=gender;
    }*/
+   public void initBean() {
+       System.out.println("Init Bean for : Actor");
+   }
+
+    public void destroyBean() {
+        System.out.println("Destroy Bean for : Actor");
+    }
     public void dispaly(){
 
         System.out.println("Actor details:" + "\n"+  "Name:" + name + "\n" + "Age:" + " " + age +"\n" + "Gender:" +  gender);

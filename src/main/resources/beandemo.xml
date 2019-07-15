@@ -3,6 +3,11 @@
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans
         http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <bean id="actor" class="com.stackroute.domain.Actor" init-method="initBean" destroy-method="destroyBean">
+        <property name="name" value="Yash"></property>
+        <property name="age" value="40"></property>
+        <property name="gender" value="Male"></property>
+    </bean>
 
-    <bean id="lcobj" class="com.stackroute.spring.demo.BeanLifeCycleDemoBean" init-method="Init" destroy-method="clean" ></bean>
+    <bean class="com.stackroute.demo.BeanPostProcessorDemoBean" ></bean>
 </beans>
